@@ -1,0 +1,31 @@
+{
+  "name": "ReactD3js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/acachary/ReactD3js",
+  "description": "NSF and NASA Polar Dataset visualization with React and D3.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "visualization",
+    "React",
+    "D3"
+  ],
+  "authors": [
+    "Ananya Acharya"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5",
+    "react": "~0.13.2",
+    "bootstrap": "~3.3.4",
+    "lodash": "~3.7.0"
+  }
+}
