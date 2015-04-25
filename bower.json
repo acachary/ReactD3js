@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "homepage": "https://github.com/acachary/ReactD3js",
   "description": "NSF and NASA Polar Dataset visualization with React and D3.js",
-  "moduleType": [
-    "node"
-  ],
   "keywords": [
     "visualization",
     "React",
