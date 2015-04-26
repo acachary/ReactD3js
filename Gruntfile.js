@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
         browserify: {
             options: {
-                transform: ['reactify', 'debowerify']
+                transform: ['reactify', 'debowerify', 'cssify']
             },
             dev: {
                 options: {

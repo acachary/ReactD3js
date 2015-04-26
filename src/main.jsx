@@ -2,6 +2,7 @@
 var React = require('react'),
     _ = require('lodash'),
     d3 = require('d3');
+var Spinner = require('react-spinkit');
 
 var DataMap = React.createClass({
 	componentWillMount: function()
@@ -25,12 +26,7 @@ var DataMap = React.createClass({
     	{
     		return(
     			<div>
-    				<h3 class="loading">Loading...</h3>
-	    			<div class="spinner">
-	    			  <div class="bounce1"></div>
-	    			  <div class="bounce2"></div>
-	    			  <div class="bounce3"></div>
-	    			</div>
+    				<Spinner spinnerName='three-bounce' noFadeIn />
     			</div>
     		);
     	}
