@@ -41248,13 +41248,42 @@ var React = require("./../bower_components/react/react.js"),
     d3 = require("./../bower_components/d3/d3.js");
 
 var DataMap = React.createClass({displayName: "DataMap",
-    render: function () {
+	componentWillMount: function()
+	{
+		this.loadRawData();
+	},
+
+	getInitialState: function()
+	{
+		return{rawData:[]};
+	},
+
+	loadRawData: function()
+	{
+
+	},
+
+    render: function ()
+    {
+    	if(this.state.rawData.length == 0)
+    	{
+    		return(
+    			React.createElement("div", null, 
+    				React.createElement("h3", {class: "loading"}, "Loading..."), 
+	    			React.createElement("div", {class: "spinner"}, 
+	    			  React.createElement("div", {class: "bounce1"}), 
+	    			  React.createElement("div", {class: "bounce2"}), 
+	    			  React.createElement("div", {class: "bounce3"})
+	    			)
+    			)
+    		);
+    	}
         return (
             React.createElement("div", null, 
                 React.createElement("div", {className: "row"}, 
                     React.createElement("div", {className: "col-md-12"}, 
                         React.createElement("svg", {width: "700", height: "500"}
-                        
+
                         )
                     )
                 )
