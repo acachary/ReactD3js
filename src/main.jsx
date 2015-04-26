@@ -1,20 +1,22 @@
-var React = require('react');
-var _ = require('lodash');
-var d3 = require('d3');
 
-var dataMap = React.createClass({
-	render: function()
-	{
-		return(
-			<div className = "row">
-				<div className = "col-md-12">
-					<svg width = "700" height = "500">
+var React = require('react'),
+    _ = require('lodash'),
+    d3 = require('d3');
 
-					</svg>
-				</div>
-			</div>
-		);
-	}
+var DataMap = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <svg width = "700" height = "500">
+                        
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 });
 
-React.render(<dataMap/>, document.querySelectorAll('.worldMap')[0]);
+React.render(<DataMap />, document.querySelectorAll('.worldMap')[0]);

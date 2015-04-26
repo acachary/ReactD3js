@@ -41242,25 +41242,28 @@ module.exports = warning;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],4:[function(require,module,exports){
-var React = require("./../bower_components/react/react.js");
-var _ = require("./../bower_components/lodash/lodash.js");
-var d3 = require("./../bower_components/d3/d3.js");
 
-var dataMap = React.createClass({displayName: "dataMap",
-	render: function()
-	{
-		return(
-			React.createElement("div", {className: "row"}, 
-				React.createElement("div", {className: "col-md-12"}, 
-					React.createElement("svg", {width: "700", height: "500"}
+var React = require("./../bower_components/react/react.js"),
+    _ = require("./../bower_components/lodash/lodash.js"),
+    d3 = require("./../bower_components/d3/d3.js");
 
-					)
-				)
-			)
-		);
-	}
+var DataMap = React.createClass({displayName: "DataMap",
+    render: function () {
+        return (
+            React.createElement("div", null, 
+                React.createElement("div", {className: "row"}, 
+                    React.createElement("div", {className: "col-md-12"}, 
+                        React.createElement("svg", {width: "700", height: "500"}
+                        
+                        )
+                    )
+                )
+            )
+        );
+    }
 });
 
-React.render(React.createElement("dataMap", null), document.querySelectorAll('.worldMap')[0]);
+React.render(React.createElement(DataMap, null), document.querySelectorAll('.worldMap')[0]);
+
 
 },{"./../bower_components/d3/d3.js":1,"./../bower_components/lodash/lodash.js":2,"./../bower_components/react/react.js":3}]},{},[4]);
